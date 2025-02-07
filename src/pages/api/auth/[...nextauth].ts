@@ -19,6 +19,7 @@ export default NextAuth({
             }
         }),
     ],
+    secret: process.env.secret_key,
     // Define callback functions to manage session and token
     callbacks: {
         // Modify the session object before it is returned to the client
